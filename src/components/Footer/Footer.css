@@ -1,0 +1,10 @@
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-label {
+  font-weight: 600;
+  margin: 15px;
+}

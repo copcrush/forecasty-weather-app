@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+  inset: 0;
+}
+
+.dark-mode {
+  background-color: #222;
+  color: #fff;
+}
+
+.App {
+  color: #333;
+  height: auto;
+  margin: auto;
+  padding: 1.5rem;
+  border-radius: 25px;
+  max-width: 100%;
+}
+
+@media (max-width: 600px) {
+  .App {
+    margin: 1rem;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .App {
+    margin: 0.5rem;
+    padding: 0.5rem;
+  }
+}

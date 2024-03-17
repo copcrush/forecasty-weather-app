@@ -1,0 +1,142 @@
+.hourly-container,
+.daily-container {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.hourly-container::-webkit-scrollbar,
+.daily-container::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.hourly-container::-webkit-scrollbar-thumb,
+.daily-container::-webkit-scrollbar-thumb {
+  background-color: #787878;
+  border-radius: 20px;
+}
+
+.hourly-container::-webkit-scrollbar-track,
+.daily-container::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+  border-radius: 20px;
+}
+
+.hourly-forecast-title,
+.daily-forecast-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: 500;
+  border-radius: 50px;
+  border: 2px solid white;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.daily-forecast-title {
+  border-radius: 12px;
+}
+
+.daily-forecast-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hourly,
+.daily {
+  display: inline-block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.hourly-forecast-card,
+.daily-forecast-card {
+  display: inline-block;
+  width: 280px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.hourly-time,
+.daily-time {
+  margin-top: 5px;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.hourly-icons,
+.daily-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hourly-temp,
+.daily-temp {
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.hourly-description,
+.daily-description {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.forecast-date-dropdown {
+  font-size: 16px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 25px;
+  border: 2px solid black;
+  font-weight: 600;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 1000px) {
+  .hourly-forecast-card,
+  .daily-forecast-card {
+    display: inline-block;
+    width: 150px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .hourly-time,
+  .daily-time {
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .hourly-temp,
+  .daily-temp {
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  .hourly-description,
+  .daily-description {
+    font-size: 15px;
+    font-weight: 500;
+  }
+}

@@ -1,0 +1,146 @@
+.weather-container {
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 25px;
+  margin: 20px 10px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-first-col,
+.weather-second-col {
+  color: black;
+  font-size: 18px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 25px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+  padding: 20px 80px;
+  margin: 10px 20px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-container .date {
+  font-size: 20px;
+}
+
+.weather-container .location {
+  font-size: 25px;
+}
+
+.weather-container .temperature {
+  font-size: 50px;
+}
+
+.weather-container .weather {
+  font-size: 25px;
+}
+
+.weather-second-col .weather-details-header {
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.sunrise-sunset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sunrise-sunset .sunrise-container,
+.sunrise-sunset .sunset-container {
+  margin: 5px 20px;
+}
+
+.sunrise-container,
+.sunset-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sunrise-images,
+.sunset-images {
+  width: 75px;
+}
+
+.weather-details-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.weather-second-col .sunrise-details,
+.weather-second-col .sunset-details,
+.weather-second-col .humidity-container,
+.weather-second-col .wind-container,
+.weather-second-col .pressure-container {
+  font-size: 20px;
+}
+
+.weather-container .humidity-container,
+.weather-container .wind-container,
+.weather-container .pressure-container {
+  margin: 10px;
+}
+
+.humidity-images,
+.wind-images,
+.pressure-images {
+  width: 70px;
+}
+
+@media (max-width: 1000px) {
+  .weather-container {
+    font-size: 16px;
+    flex-direction: column;
+  }
+
+  .weather-first-col,
+  .weather-second-col {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .weather-container .date {
+    font-size: 17px;
+  }
+
+  .weather-container .location {
+    font-size: 22px;
+  }
+
+  .weather-second-col .weather-details-header {
+    font-size: 22px;
+  }
+
+  .weather-second-col .sunrise-details,
+  .weather-second-col .sunset-details,
+  .weather-second-col .humidity-container,
+  .weather-second-col .wind-container,
+  .weather-second-col .pressure-container {
+    font-size: 18px;
+  }
+
+  .weather-container .temperature {
+    font-size: 50px;
+  }
+
+  .weather-container .weather {
+    font-size: 25px;
+  }
+
+  .sunrise-sunset .sunrise-container,
+  .sunrise-sunset .sunset-container {
+    margin: 5px 10px;
+  }
+}
